@@ -62,6 +62,11 @@
 //                            queryUrl:@"https://postman-echo.com/get?foo1=bar1&foo2=bar2"
                             queryString:@"data(//span[@data-station=\"IMELBOUR428\"][@data-variable=\"temperature\"]/span[@class=\"wx-value\"])"]];
     [stationList addObject:[[wsbStation alloc]
+                            initWithTitle:@"Hatcher Resevoir"
+                            queryUrl:@"https://www.wunderground.com/weather/us/co/pagosa-springs/KCOPAGOS87"
+                            //                            queryUrl:@"https://postman-echo.com/get?foo1=bar1&foo2=bar2"
+                            queryString:@"data(//div[@class=\"current-temp\"]//span[contains(@class, \"wu-value\")])"]];
+    [stationList addObject:[[wsbStation alloc]
                             initWithTitle:@"Canberra"
                             queryUrl:@"http://www.bom.gov.au/act/observations/canberra.shtml"
                             queryString:@"data(//td[contains(@headers, \"station-canberra\")][contains(@headers, \"-tmp \")])"]];
