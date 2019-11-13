@@ -10,4 +10,13 @@
 
 @interface wsbStation : NSObject
 
+@property NSString* name;
+@property NSString* queryUrl;
+@property NSString* xQuery;
+
+
+- (id) init;
+
+- (id) initWithTitle:(NSString*) stationName queryUrl:(NSString*) url queryString:(NSString*) query;
+
 @end
